@@ -1,0 +1,10 @@
+[q,p]=meshgrid(-10:.5:10,-15:.5:15);
+qdot=p;
+R=3;
+L=2;
+C=4;
+pdot=-((R/L)*p+(1/L*C)*q);
+quiver(q,p,qdot,pdot);
+startq=-10:1:10;
+startp=ones(size(startq));
+streamline(q,p,qdot,pdot,startq,startp);
