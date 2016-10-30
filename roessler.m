@@ -1,5 +1,5 @@
 function rhs=roessler(t,w)
-a=.2;
+a=.1;
 c=4;
 b=.1;
 xdot=-w(2)-w(3);
